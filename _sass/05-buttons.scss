@@ -6,17 +6,24 @@ a {
 .underline-bb {
   display: inline-block;
   position: relative;
-  border-bottom: solid 2px #555; }
+  border-bottom: solid 3px #555;
+   }
+
+.underline-bb:hover {
+  border-bottom: 0px;
+}
 
 .underline-bb:after {
   content: '';
   display: block;
-  margin: auto;
-  height: 2px;
+  margin-top: 3px;
+  margin-bottom: -2px;
+  height: 3px;
   width: 0px;
   background: transparent;
   transition: width .5s ease, background-color .5s ease; }
 
 .underline-bb:hover:after {
   width: 100%;
-  background: #71B6FC; }
+  background: #71B6FC; 
+}
