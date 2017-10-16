@@ -76,6 +76,18 @@
       <p>I have set it up like this inside of the body. We have two navs with a unordered list and two links. They will both need to be the same in order to have no changes in the navigation.</p>
       <script src="https://gist.github.com/lexisvon/4559f5bbf12ba6ddccd5a7514e68e892.js"></script>
       <p>Once we have this set up it’s time to add the actual button we’re going to click to toggle the mobile nav. The way this works is that when we go to a breakpoint of tablet and higher the main nav will be the only thing showing.</p>
+      <p>Taking the same code before let’s just add a div of the button.</p>
+      <p>Anywhere is fine and a neat trick is to use font awesome for a button instead. You can check out my other article on how this works. For now I will assume you know how it works and will continue using font awesome.</p>
+      <p>Now that we have the button we want to add some styles to make this look a bit better. Have fun with it. Use whatever font and colors you want. We want to have our main nav disappear since we are developing mobile-first.</p>
+      <p>Our css should look like this. I’m adding the display flex for the links to appear inline. We want the mobile nav to have a display of none as well as the mobile btn wrapper.</p>
+      <p>We also want to make this a responsive nav so we will need to add media queries in our css.</p>
+      <p>It’s best practice to place them at the end of your css file. We need to tell the .main nav to display: none; when we resize lower than 800 pixels for mobile. I am also telling the mobile-btn-wrapper to have a display of flex and justify to the bottom. This is what your whole css file should look like.</p>
+      <p>The last thing we need to do is get this functioning. In our script.js we want to tell our button on click to toggle the mobile-nav.</p>
+      <p>I added the e.preventDefault(); to prevent the browser from doing the default link action which the comment states.</p>
+      <p>Also when we resize we have a little bit of an issue when it comes to the nav closing. So I added this if statement to make the mobile-nav hide if the window is resizing greater than 800.</p>
+      <p>All together your javascript file should look like this.</p>
+      <p>If you view this file in browser you will see that we have a complete functioning responsive nav that hides and shows on click of a button. See the whole project here.</p>
+      <p>If there are any questions feel free to email me at lexisvons@gmail.com. I hope that this tutorial was helpful in creating this navigation.</p>
       <script src="https://gist.github.com/lexisvon/ce7e00c9b1707d540695cce8d2b25248.js"></script>
     </div>
   </article>
