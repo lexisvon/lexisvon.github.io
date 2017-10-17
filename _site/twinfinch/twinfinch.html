@@ -1,0 +1,265 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, intitial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/normalize.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJTz4Ynmr3ZeHHqr99EfnoNhsHGNi_TK0&callback=initMap"
+  type="text/javascript"></script>
+<script type="text/javascript">
+	// When the window has finished loading create our google map below
+	google.maps.event.addDomListener(window, 'load', init);
+	function init() {
+		// Basic options for a simple Google Map
+		// For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+		var mapOptions = {
+			// How zoomed in you want the map to start at (always required)
+			zoom: 12,
+			// The latitude and longitude to center the map (always required)
+			center: new google.maps.LatLng(45.5111003,-122.6637244), // Portland, Oregon
+			scrollwheel: false,
+			// How you would like to style the map. 
+			// This is where you would paste any style found on Snazzy Maps.
+			styles: [{"featureType":"administrative","elementType":"all","stylers":[{"saturation":"-100"}]},{"featureType":"administrative.province","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"all","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","elementType":"all","stylers":[{"saturation":-100},{"lightness":"50"},{"visibility":"simplified"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":"-100"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"all","stylers":[{"lightness":"30"}]},{"featureType":"road.local","elementType":"all","stylers":[{"lightness":"40"}]},{"featureType":"transit","elementType":"all","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]},{"featureType":"water","elementType":"labels","stylers":[{"lightness":-25},{"saturation":-100}]}]
+		};
+		// Get the HTML DOM element that will contain your map 
+		// We are using a div with id="map" seen below in the <body>
+		var mapElement = document.getElementById('map');
+		// Create the Google Map using our element and options defined above
+		var map = new google.maps.Map(mapElement, mapOptions);
+		// Let's also add a marker while we're at it
+		var marker = new google.maps.Marker({
+			position: new google.maps.LatLng(45.5111003,-122.6637244),
+			map: map,
+			title: 'Twin Finch'
+		});
+	}
+</script>
+<title>Twin Finch</title>
+</head>
+<body>
+	<header class="txt-algn-cntr">
+		<div class="wrapper">
+			<nav class="smooth-scroll" id="home">
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#roasts">Roasts</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div id="bkgrnd-img">
+			<div class="wrapper">
+				<h1><img src="img/logo.png" alt="Twin Finch Roastery"></h1>
+				<p>An authentic micro-roastery; small, dedicated, and highly focused on quality.</p>
+				<p class="smooth-scroll"><a href="#roasts">Our Products</a></p>
+			</div>
+		</div>
+	</header>
+	<section class="bkgrnd-grey txt-algn-cntr" id="roasts">
+		<div class="wrapper">
+			<header>
+				<h2>Roasts</h2>
+				<p> We have a constantly evolving, hand picked selection of fine coffee origins and delicious blends engineered to help you brew a cafe-quality cup at home.</p>
+			</header>
+			<div class="row">
+				<section class="col-1-2">
+					<div class="row">
+						<div class="col-2-5">
+							<p>Our house blend was rated a 98 by coffeereview.com!</p>
+							<img src="img/product-1-hb.png" alt="" width="150">
+						</div>
+						<div class="col-3-5">
+							<header>
+								<h3>Finch House Blend</h3>
+							</header>
+							<p>Medium</p>
+							<p>Hint of citrus, complemented by flavors of dark chocolate, peanut.</p>
+							<div></div>
+							<p>Cajamarca &amp; Moyobamba Regions, Peru</p>
+							<p id="price-hb">$17.95/lb</p>
+							<p><a href="#">buy now</a></p>
+						</div>
+					</div>
+				</section>
+				<section class="col-1-2">
+					<div class="row">
+						<div class="col-2-5">
+							<img src="img/product-2-eo.png" alt="" width="150">
+						</div>
+						<div class="col-3-5">
+							<header>
+								<h3>Evening Oak</h3>
+							</header>
+							<p>Medium-Dark</p>
+							<p>Our featured roast of the season. Pungently rich and complex with hints of night-blooming flowers and coriander in aroma and cup.</p>
+							<div></div>
+							<p>Eastern Java, Indonesia</p>
+							<p id="price-eo">$19.95/lb</p>
+							<p><a href="#">buy now</a></p>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="row" id="roasts-2">
+				<section class=" col-1-3">
+					<div class="row">
+						<div class="col-2-5">
+							<img src="img/product-3-sun.png" alt="" width="150">
+						</div>
+						<div class="col-3-5">
+							<header>
+								<h3>Sunrise</h3>
+							</header>
+							<p>Light</p>
+							<p>Light, fruity acidity which complements its fully nutty body and unique spicy tones.</p>
+							<div></div>
+							<p>La Chiapas, Mexico</p>
+							<p id="price-sun">$17.95/lb</p>
+							<p><a href="#">buy now</a></p>
+						</div>
+					</div>
+				</section>
+				<section class=" col-1-3">
+					<div class="row">
+						<div class="col-2-5">
+							<img src="img/product-4-mid.png" alt="" width="150">
+						</div>
+						<div class="col-3-5">
+							<header>
+								<h3>Midnight</h3>
+							</header>
+							<p>Dark</p>
+							<p>Roasted into second crack for a big, bold and dark cup. Beans display oil. </p>
+							<div></div>
+							<p>Latin America</p>
+							<p id="price-mid">$17.95/lb</p>
+							<p><a href="#">buy now</a></p>
+						</div>
+					</div>
+				</section>
+				<section class=" col-1-3" >
+					<div id="espresso" class="row">
+						<div class="col-2-5">
+							<img src="img/product-5-es.png" alt="" width="150">
+						</div>
+						<div  class="col-3-5">
+							<header>
+								<h3>Espresso</h3>
+							</header>
+							<p id="espresso-p">Clean, a little roasty, sumptuous crema, unfussy, delicious.</p>
+							<div></div>
+							<p>Latin America, Africa, Indonesia</p>
+							<p id="price-es">$19.95/lb</p>
+							<p><a href="#">buy now</a></p>
+						</div>
+					</div>
+				</section>
+			</div>
+			<p id="disclaimer">You can buy from us directly at our Portland storefront located at 457 NW Market Street. </p>
+		</div>
+		<blockquote class="bkgrnd-q-n">
+			<p>“This extraordinary coffee almost defies description with its aromatic complexity while retaining a classic clarity of structure.” <a href="http://www.coffeereview.com/" target="_blank">- Coffee Review</a></p>
+		</blockquote>
+	</section>
+	<section class="bkgrnd-grey" id="about">
+		<div class="wrapper">
+			<header>
+				<h2>About</h2>
+			</header>
+			<div class="row">
+				<div class="col-1-2" id="about-img"></div>
+				<div class="col-1-2">
+					<p>Our coffee is roasted in a <strong>hot air, refractory lined roaster</strong> with an extraordinary level of control. The significance of relying on a high volume of hot air to roast coffee beans can't be understated. </p>
+					<p>Most small coffee roasters use a single stage burner which offers virtually no control during the roasting process. The refractory <strong>significantly reduces hot spots</strong> which can damage coffee beans and produces a much more even roasting environment.</p>
+					<p>No matter how you like your coffee, check out our essential tips and techniques for making and enjoying a great cup. <a href="https://www.google.com/" target="_blank"><strong>Read More Here!</strong></a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="newsletter">
+		<header class="wrapper">
+			<p>Sign up for our newsletter</p>
+		</header>
+		<form>
+			<label for="email">Enter Email Address</label>
+			<input type="email" name="email" id="email" placeholder="Email">
+			<p><a href="#">Sign Up</a></p>
+		</form>
+	</section>
+	<section class="bkgrnd-grey" id="contact">
+		<div class="wrapper">
+			<header>
+				<h2>Contact</h2>
+			</header>
+			<div class="row">
+				<div class="col-1-2" id="f-right">
+					<p>Online orders usually ship quickly and arrive within three business days. We only ship the freshest coffee and your satisfaction is guaranteed. </p>
+					<p>Our rotating, featured coffees are roasted on a more limited basis and your order may be held until the next time a batch hits the roaster. We only ship whole bean, but will grind for you in-store per request.</p>
+				</div>
+				<form class="col-1-2 f-left">
+					<label for="name">Name</label>
+					<input type="text" name="name" id="name" placeholder="Name">
+					<label for="email-2">Email</label>
+					<input type="email" name="email-2" id="email-2" placeholder="Email">
+					<textarea placeholder="Leave A Message" rows="7"></textarea>
+					<p><a href="#">Send</a></p>
+				</form>
+			</div>
+		</div>
+		<div id="map"></div>
+	</section>
+	<footer class="wrapper">
+		<div class="row">
+			<div class="col-1-4 smooth-scroll">
+				<a href="#home"><img src="img/logo.png" alt="Twin Finch Roastery"></a>
+			</div>
+			<div class="col-1-4">
+				<h4>Contact</h4>
+				<p>457 NW Market Street Portland, OR</p>
+			</div>
+			<div class="col-1-4">
+				<h4>Site Map</h4>
+				<nav class="smooth-scroll">
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#roasts">Roasts</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="col-1-4">
+				<ul>
+					<li><a href="https://www.facebook.com/Twin-Finch-345857889123486/?fref=ts" target="_blank"></a></li>
+					<li><a href="https://twitter.com/Twin_Finch" target="_blank"></a></li>
+					<li><a href=" https://plus.google.com/u/2/111653126719994684142" target="_blank"></a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+	<script>
+	jQuery(document).ready(function($){
+		// Smooth scroll home nav
+			$('.smooth-scroll').on('click', 'a', function(e) {
+				// prevent default anchor click behavior
+				e.preventDefault();
+			   // store hash
+			   var hash = this.hash;
+				$('html, body').animate({
+				   scrollTop: $(this.hash).offset().top-0
+				 }, 700, function(){
+				   // when done, add hash to url
+				   // (default click behaviour)
+				   window.location.hash = hash;
+				 });
+			});
+	});
+	</script>
+</body>
+</html>

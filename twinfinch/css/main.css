@@ -1,0 +1,630 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Typography
+	1.1 - Headings
+	1.2 - Body Copy
+	1.3 - Buttons
+	1.4 - Forms
+	1.5 - Lists
+	1.6 - Tables
+2.0 - Navigation Menus
+	3.1 - Main Menu
+	3.2 - Sub Menu
+	3.3 - Footer Menu
+3.0 - Content
+	3.1 - Site Structure (Site Header, Advertisement, Site Footer)
+	3.2 - Section Name
+	3.3 - Section Name
+4.0 - Media
+5.0 - Utility
+	5.1 - Background Colors
+	5.2 - Text Colors
+	5.3 - Text Sizes
+	5.4 - Alignments
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+1.0 - TYPOGRAPHY
+-------------------------------------------------------------- */
+
+body, h1 + p, #bkgrnd-img a, .col-2-5 p, #disclaimer, blockquote p, .col-3-5 p:nth-child(2), .col-3-5 a, .col-3-5 p:nth-child(6), #espresso p:nth-child(5), #newsletter p, #contact a {
+  	font-family: 'Playfair Display', serif;
+}
+p, #espresso p:nth-child(2), footer nav {
+  	font-family: 'Oxygen', sans-serif;
+}
+h1 + p, #bkgrnd-img a, .col-3-5 a, #espresso p, blockquote p, #newsletter p, #newsletter a, #contact a, blockquote a:hover  {
+  	color: #fff;
+}
+body, nav a, blockquote a, #about a {
+  	color: #4B4B4B;
+}
+.col-3-5 p:nth-child(2), nav a:hover, #about a:hover {
+  	color: #BA9F64;
+}
+#bkgrnd-img a, .col-3-5, h2 + p, blockquote p, #about, #contact, #newsletter p, input {
+  	letter-spacing: 1px;
+}
+h1 + p, h2, .col-2-5 p, h3 {
+  	letter-spacing: 2px;
+}
+h2 + p, .col-3-5, .col-1-2, #newsletter p {
+  	font-weight: 100;
+}
+strong, h1 + p {
+  	font-weight: 700;
+}
+.col-1-2, h2 + p, footer .col-1-4:nth-child(2) p {
+  	line-height: 1.2rem;
+}
+.col-2-5 p, h2 + p, #bkgrnd-img a, #about-img + .col-1-2, #contact p, #newsletter, .col-3-5 p, h4 {
+  	font-size: .9rem;
+}
+nav ul li, #contact input, textarea, #contact a, #roasts-2 p, footer .col-1-4:nth-child(2) p {
+  	font-size: .8rem;
+}
+h2 {
+  	font-size: 1.8rem;
+}
+h1 + p {
+  	font-size: 1.7rem;
+}
+blockquote p {
+  	font-size: 1.5rem;
+}
+
+#newsletter header p, .col-3-5 p:nth-child(2), blockquote a {
+  	font-size: 1.2rem;
+}
+h2, nav a, .col-3-5 a, #bkgrnd-img:nth-child(2), h3, .col-3-5:nth-child(6), .col-2-5 p, .col-3-5 p:nth-child(2), h4, #newsletter, #newsletter form input, #contact a, #contact input, textarea {
+  	text-transform: uppercase;
+}
+#espresso p:nth-child(2) {
+  	text-transform: inherit;
+}
+
+/*-------------- 1.1 headings ---------------- */
+h1 {
+  	padding-bottom: 60px;
+}
+h2 {
+  	margin-top: 0px;
+  	padding-top: 60px;
+  	font-weight: 400;
+}
+#newsletter header p {
+  	margin-right: 30px;
+  	margin-left: 70px;
+}
+/*-------------- 1.2 body copy ---------------- */
+
+h1 + p {
+  	line-height: 35px;
+  	text-transform: none;
+  	margin-bottom: 45px;
+  	padding: 0% 20%;
+}
+h2 + p {
+  	margin-bottom: 80px;
+  	padding: 0% 30%;
+}
+#disclaimer {
+  	font-style: italic;
+  	margin-top: 40px;
+  	margin-bottom: 70px;
+}
+#about-img + .col-1-2 {
+  	margin-top: 125px;
+}
+#contact p, #about-img + .col-1-2, #contact form {
+  	padding-left: 40px;
+}
+blockquote p {
+  	padding: 5% 20%;
+}
+/*-------------- 1.3 buttons ---------------- */
+
+a,
+nav a {
+ 	text-decoration: none;
+}
+#bkgrnd-img a {
+  	padding: 12px 15px;
+}
+.col-3-5 a {
+  	padding: 6px 40px;
+}
+#roasts-2 .col-3-5 a {
+  	padding: 4px 20px;
+}
+#about a {
+  	text-decoration: underline;
+}
+#newsletter a {
+  	padding: 10px 30px;
+  	margin-left: 25px;
+}
+#contact a {
+  	padding: 5px 50px;
+}
+footer .col-1-4:last-child ul li:first-child a {
+  	background: url(../img/sprite-fb.png) no-repeat;
+}
+footer .col-1-4:last-child ul li:nth-child(2) a {
+  	background: url(../img/sprite-tw.png) no-repeat;
+}
+footer .col-1-4:last-child ul li:last-child a {
+  	background: url(../img/sprite-google.png) no-repeat;
+}
+footer .col-1-4:last-child ul li:first-child a,
+footer .col-1-4:last-child ul li:nth-child(2) a,
+footer .col-1-4:last-child ul li:last-child a {
+  	width: 50px;
+  	height: 50px;
+ 	display: inline-block;
+}
+footer .col-1-4:last-child ul li:first-child a:hover,
+footer .col-1-4:last-child ul li:nth-child(2) a:hover,
+footer .col-1-4:last-child ul  li:last-child a:hover {
+  	background-position: 0 -50px;
+}
+footer .col-1-4:last-child li {
+  	padding: 10px;
+}
+/*-------------- 1.4 forms ---------------- */
+
+#newsletter {
+ 	padding: 45px 0px;
+}
+#newsletter form input {
+  	background: #1A1E25;
+  	border: solid thin #fff;
+  	padding: 10px 7px;
+  	width: 32%;
+}
+#contact form input, textarea {
+  	background: #F0EFEF;
+  	border: solid 1.8px #1A1E25;
+}
+#contact input, textarea {
+  	width: 97%;
+  	padding: 10px 5px;
+}
+#contact input {
+  	margin-bottom: 15px;
+}
+#contact form p {
+  	text-align: right;
+  	padding-right: 14px;
+}
+#contact .col-1-2, #about-img {
+  	margin: 50px 0px;
+}
+#contact #map a {
+  	font: inherit;
+  	background: transparent;
+}
+#contact .wrapper {
+  	padding-bottom: 40px;
+}
+#newsletter ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  	color: #EFEFEF;
+}
+#newsletter ::-moz-placeholder {
+  /* Firefox 19+ */
+  	color: #EFEFEF;
+}
+#newsletter :-ms-input-placeholder {
+  /* IE 10+ */
+  	color: #EFEFEF;
+}
+#newsletter :-moz-placeholder {
+  /* Firefox 18- */
+  	color: #EFEFEF;
+}
+#contact ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  	color: #1A1E25;
+}
+#contact ::-moz-placeholder {
+  /* Firefox 19+ */
+  	color: #1A1E25;
+}
+#contact :-ms-input-placeholder {
+  /* IE 10+ */
+  	color: #1A1E25;
+}
+#contact :-moz-placeholder {
+  /* Firefox 18- */
+  	color: #1A1E25;
+}
+input[type="email"],
+.col-3-5 {
+  	color: #EFEFEF;
+}
+/*-------------- 1.5 lists ---------------- */
+
+ul {
+  	list-style: none;
+  	padding: 0px;
+}
+/*-------------- 1.6 tables ---------------- */
+/*--------------------------------------------------------------
+2.0 - NAVIGATION MENUS
+-------------------------------------------------------------- */
+/*-------------- 2.1 main menu ---------------- */
+
+nav ul li {
+  	padding-right: 65px;
+  	padding-left: 60px;
+}
+nav {
+  	padding: 15px 0px;
+}
+/*-------------- 2.2 sub menu ---------------- */
+/*-------------- 2.3 footer menu ---------------- */
+
+footer img {
+ 	 width: 50%;
+}
+footer .col-1-4:nth-child(3) ul {
+  	-o-column-count: 2;
+  	-ms-column-count: 2;
+  	-webkit-column-count: 2;
+  	-moz-column-count: 2;
+ 	 column-count: 2;
+}
+footer nav ul li {
+  	padding: 0px 12px;
+}
+footer nav {
+  	padding: 0px;
+}
+footer nav ul {
+  	margin: 0px;
+}
+footer .col-1-4:first-child, footer .col-1-4:last-child {
+  	margin-top: 37px;
+}
+footer .col-1-4:nth-child(2) {
+ 	padding: 0px 30px;
+}
+footer .col-1-4:nth-child(3) {
+  	padding-right: 90px;
+  	padding-left: 30px;
+}
+footer nav ul li a {
+	text-transform: none;
+	font-weight: 400;
+}
+/*--------------------------------------------------------------
+3.0 - CONTENT
+-------------------------------------------------------------- */
+/*-------------- 3.1 - Site Structure (Site Header, Advertisement, Site Footer) ---------------- */
+
+blockquote, #bkgrnd-img, .wrapper, .col-3-5 div, h3, blockquote p, footer .col-1-4:nth-child(2) p {
+  	margin: 0 auto;
+}
+body {
+  	padding: 0px 20px;
+}
+.col-3-5 p:nth-child(2), blockquote a {
+ 	margin-top: 10px;
+ 	margin-bottom: 35px;
+}
+#about {
+  	padding-bottom: 80px;
+}
+#roasts .col-1-2:first-child .col-2-5 {
+  	margin-top: 80px;
+}
+#roasts .col-1-2:last-child .col-2-5 {
+  	margin-top: 170px;
+}
+#roasts-2 .col-2-5 {
+	margin-top: 150px;
+}
+#price-eo, #price-sun, #price-hb {
+ 	margin-top: 35px;
+}
+#price-mid {
+	margin-top: 49px;
+}
+#price-es {
+	margin-top: 32px;
+}
+#espresso-p {
+ 	margin-top: 60px;
+  	margin-bottom: 15px;
+}
+#roasts .col-1-2 .col-3-5 {
+  	margin-bottom: 70px;
+}
+.wrapper, footer .col-1-4:nth-child(2) p {
+  	width: 75%;
+}
+.row:after {
+  	clear: both;
+  	content: "";
+  	display: table;
+}
+img {
+  	max-width: 100%;
+}
+[class*='col-'] {
+  	float: left;
+  	margin-bottom: 20px;
+  	padding-right: 20px;
+}
+[class*='col-']:last-of-type {
+  	padding-right: 0;
+}
+.col-1-2 {
+  	width: 50%;
+}
+.col-1-3 {
+  	width: 33.33%;
+}
+.col-1-4 {
+  	width: 25%;
+  	margin-top: 25px;
+}
+.col-3-5 {
+  	width: 60%;
+  	padding: 30px !important;
+}
+#roasts-2 .col-3-5 {
+  	padding: 20px 10px !important;
+}
+.col-2-5 {
+  	width: 40%;
+}
+/*-------------- 3.2 - Section Name ---------------- */
+/*-------------- 3.3 - Section Name ---------------- */
+/*--------------------------------------------------------------
+4.0 - MEDIA
+-------------------------------------------------------------- */
+
+#bkgrnd-img {
+  	background: url(../img/hero.jpg) no-repeat 0 -120px;
+  	-moz-background-size: cover;
+  	-ms-background-size: cover;
+  	-o-background-size: cover;
+  	-webkit-background-size: cover;
+  	background-size: cover;
+  	padding: 30px 0 100px;
+}
+#about-img {
+  	background: url(../img/about.jpg) no-repeat 0 -30px;
+  	height: 400px;
+}
+#map {
+  	height: 200px;
+}
+.col-3-5 div {
+  	border-bottom: solid thin white;
+  	width: 45%;
+}
+/*--------------------------------------------------------------
+5.0 - UTILITY
+-------------------------------------------------------------- */
+/*--------------5.1 - Background Colors ---------------- */
+
+#bkgrnd-img a, blockquote, .col-3-5 a, #newsletter a, #contact a {
+  	background: #BA9F64;
+}
+#bkgrnd-img a:hover, .col-3-5 a:hover, #newsletter a:hover, #contact a:hover {
+  	background: #7B6955;
+}
+#newsletter {
+  	background: #1A1E25;
+}
+.bkgrnd-grey {
+  	background: #EFEFEF;
+}
+.col-3-5 {
+  	background: #1A1E25;
+}
+/*-------------- 5.2 - Text Colors ---------------- */
+/*-------------- 5.3 - Text Sizes ---------------- */
+/*-------------- 5.4 - Alignments ---------------- */
+
+label {
+  	display: none;
+}
+#contact input {
+ 	display: block;
+}
+#newsletter header, #newsletter form, #newsletter p, nav ul li, footer .col-1-4:last-child li {
+  	display: inline;
+}
+#f-right {
+  	float: right;
+}
+.txt-algn-cntr, h2, h4, h4 + p, #newsletter {
+  	text-align: center;
+}
+*, *:after, *:before {
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+@media (max-width: 480px) {
+  /*--------------------------------------------------------------
+1.0 - TYPOGRAPHY
+-------------------------------------------------------------- */
+  /*-------------- 1.1 headings ---------------- */
+
+		h1 {
+			padding-bottom: 0px;
+		}
+		#newsletter header p, .col-1-4, footer .col-1-4:nth-child(3), #bkgrnd-img {
+			text-align: center;
+		}
+		#newsletter header {
+			display: block;
+			margin: 0;
+			margin-bottom: 40px;
+		}
+		h4, h4 + p, footer nav ul li, #roasts-2 .col-3-5 header + p, #roasts .col-3-5 header + p  {
+			font-size: 1.2rem;
+		}
+		header nav ul li, #roasts-2 .col-3-5 p, #roasts .col-3-5 p, footer .col-1-4:nth-child(2) p, #espresso p {
+			font-size: 1rem !important;
+		}
+		h4 {
+			margin-bottom: 10px;
+		}
+  /*-------------- 1.2 body copy ---------------- */
+
+		h1 + p {
+			padding: 0 5%;
+			font-size: 1.5rem;
+		}
+		h2 + p {
+			padding: 0 7.7%;
+		}
+		h4 + p {
+			width: 45%;
+			margin: 0 auto;
+			margin-bottom: 30px;
+		}
+		blockquote p {
+			padding: 8% 9%;
+		}
+		.col-2-5 p {
+			color: #fff;
+		}
+		#contact .col-1-2, #about .col-1-2 {
+			margin-top: 10px;
+		}
+		#disclaimer {
+			padding: 0% 5%;
+		}
+		#disclaimer, blockquote p, h2 + p, #about p, #contact p {
+			line-height: 1.5rem;
+		}
+		#roasts-2 .col-3-5 p, #roasts .col-3-5 p, footer .col-1-4:nth-child(2) p {
+			line-height: 1.2rem;
+		}
+  /*-------------- 1.3 buttons ---------------- */
+		#roasts-2 .col-3-5 a {
+			padding: 6px 40px;
+		}
+  /*-------------- 1.4 forms ---------------- */
+
+		#newsletter form input {
+			width: 50%;
+		}
+  /*-------------- 1.5 lists ---------------- */
+  /*-------------- 1.6 tables ---------------- */
+  /*--------------------------------------------------------------
+2.0 - NAVIGATION MENUS
+-------------------------------------------------------------- */
+  /*-------------- 2.1 main menu ---------------- */
+
+		nav ul li {
+			padding: 0px 20px;
+		}
+  /*-------------- 2.2 sub menu ---------------- */
+  /*-------------- 2.3 footer menu ---------------- */
+
+		footer .col-1-4:nth-child(3) ul {
+			-o-column-count: 1;
+			-ms-column-count: 1;
+			-webkit-column-count: 1;
+			-moz-column-count: 1;
+			column-count: 1;
+		}
+		footer .col-1-4:nth-child(3) {
+			padding: 0px;
+			font-weight: 700;
+			margin-top: 40px;
+		}
+		footer .col-1-4:nth-child(3) h4,
+		#about-img {
+			display: none;
+		}
+
+  /*--------------------------------------------------------------
+3.0 - CONTENT
+-------------------------------------------------------------- */
+  /*-------------- 3.1 - Site Structure (Site Header, Advertisement, Site Footer) ---------------- */
+
+		.wrapper {
+			width: 100%;
+		}
+		body {
+			padding: 0px;
+		}
+		.col-1-3, .col-1-2, .col-1-4 {
+			width: 100%;
+		}
+		.col-1-3, .col-1-2 {
+			padding: 0px;
+		}
+		.col-2-5, .col-3-5, #newsletter header p {
+			margin: 0px;
+		}
+		.col-2-5, .col-3-5 {
+			width: 50%;
+		}
+		#roasts .col-1-2 .col-3-5, .col-1-4 {
+			margin-bottom: 0px;
+		}
+		#roasts .col-1-2:first-child .col-2-5, #roasts-2 .col-1-3:nth-child(2) .col-2-5, #roasts-2 .col-1-3:first-child .col-2-5, #roasts-2 .col-1-3:last-child .col-2-5 {
+			padding-top: 70px;
+		}
+		#roasts .col-1-2:last-child .col-2-5 {
+			padding-top: 110px;
+		}
+		#roasts .col-1-2:first-child .col-2-5, #roasts .col-1-2:last-child .col-2-5, #roasts-2 .col-2-5 {
+			margin-top: 0px;
+		}
+		.col-2-5 {
+			padding-left: 20px;
+		}
+		.col-1-4 {
+			margin-top: 10px;
+		}
+		#about, #contact p, #contact form {
+			padding-right: 32px;
+		}
+  /*-------------- 3.2 - Section Name ---------------- */
+  /*-------------- 3.3 - Section Name ---------------- */
+  /*--------------------------------------------------------------
+4.0 - MEDIA
+-------------------------------------------------------------- */
+
+		h1 img {
+			max-width: 40%;
+		}
+		footer img {
+			width: 30%;
+			margin-left: 20px;
+		}
+		#bkgrnd-img {
+			background-size: auto;
+			background-position: 50% 25%;
+		}
+  /*--------------------------------------------------------------
+5.0 - UTILITY
+-------------------------------------------------------------- */
+  /*--------------5.1 - Background Colors ---------------- */
+		#roasts .col-1-2, .col-1-3, .col-2-5 {
+			background-color: #1A1E25;
+		}
+  /*-------------- 5.2 - Text Colors ---------------- */
+  /*-------------- 5.3 - Text Sizes ---------------- */
+  /*-------------- 5.4 - Alignments ---------------- */
+}
