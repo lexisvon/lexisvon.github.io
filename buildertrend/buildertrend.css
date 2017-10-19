@@ -81,6 +81,9 @@ nav a {
   text-transform: uppercase;
   color: black;
 }
+nav ul {
+  padding: 20px 20px;
+}
 nav ul li {
   padding-right: 30px;
 }
@@ -91,6 +94,49 @@ nav ul li {
 .wrapper {
   width: 80%;
   margin: 0 auto;
+}
+.S1 {
+  padding: 1rem 0 8rem 0;
+}
+.S2 {
+  padding-bottom: 6rem;
+}
+.S2 > div {
+  margin-right: 30px;
+}
+.S4 {
+  overflow: hidden;
+}
+.angle-bg {
+  margin-top: 200px;
+  margin-bottom: 200px;
+  background: #ccc;
+  padding: 30px 60px 400px 60px;
+  position: relative;
+}
+.angle-bg:before {
+  position: absolute;
+  content: "";
+  width: 100vw;
+  height: 50vh;
+  background: #ccc;
+  z-index: -1;
+  transform: rotate(-10deg);
+  left: 50%;
+  top: -0;
+  transform-origin: 0 0;
+}
+.angle-bg:after {
+  position: absolute;
+  content: "";
+  width: 100vw;
+  height: 50vh;
+  background: #ccc;
+  z-index: -1;
+  transform: rotate(10deg);
+  right: 50%;
+  top: 0;
+  transform-origin: 100% 0;
 }
 /*-- 3.2 - Columns --*/
 .col-1-1 {
@@ -180,6 +226,18 @@ nav ul li {
 /*--------------------------------------------------------------
 4.0 - MEDIA
 -------------------------------------------------------------- */
+.cloud-img {
+  background: url(img/buildertrend-cloud-white.png) no-repeat;
+  background-size: contain;
+  width: 450px;
+  height: 350px;
+  margin: 0 auto;
+  padding: 100px 0 50px 0;
+}
+.profile-img {
+  background-image: url(http://via.placeholder.com/400x452);
+  height: 400px;
+}
 /*--------------------------------------------------------------
 5.0 - UTILITY
 -------------------------------------------------------------- */
@@ -189,6 +247,7 @@ nav ul li {
 }
 .bg-blue {
   background-color: #24AADF;
+  padding-top: 50px;
 }
 /*-- 5.2 - Alignments --*/
 .flex {
@@ -196,4 +255,10 @@ nav ul li {
 }
 .justify-flex-end {
   justify-content: flex-end;
+}
+.txt-align-c {
+  text-align: center;
+}
+.m0a {
+  margin: 0 auto;
 }
