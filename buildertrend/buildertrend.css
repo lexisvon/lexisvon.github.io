@@ -48,11 +48,14 @@ body {
 }
 /*-- 1.1 - Headings --*/
 .border-bottom {
-  border-bottom: solid 1px grey;
+  border-bottom: solid 1px #24AADF;
 }
 .title {
   margin: 0 auto;
   padding: 5rem 0;
+}
+.title p {
+  color: #24AADF;
 }
 .title h2 {
   margin-top: 10px;
@@ -85,6 +88,27 @@ a {
 .S4 a:hover {
   color: #24AADF;
 }
+.underline-bb {
+  display: inline-block;
+  position: relative;
+  border-bottom: solid 1px grey;
+}
+.underline-bb:hover {
+  border-bottom: 0px;
+}
+.underline-bb:after {
+  content: '';
+  display: block;
+  margin-top: 7px;
+  height: 2px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease; 
+}
+.underline-bb:hover:after {
+  width: 100%;
+  background: #24AADF; 
+}
 /*--------------------------------------------------------------
 2.0 - NAVIGATION MENUS
 -------------------------------------------------------------- */
@@ -92,6 +116,7 @@ a {
 nav a {
   text-transform: uppercase;
   color: black;
+  transition: .25s ease;
 }
 nav ul {
   padding: 20px 20px;
@@ -107,6 +132,26 @@ footer > div {
   border: 2px solid #24AADF;
   padding: 2rem;
 }
+.contact {
+  margin-bottom: 30px;
+}
+footer a {
+  color: #24AADF;
+  font-weight: 600;
+}
+footer a:first-child {
+  color: black;
+  font-weight: 400;
+}
+footer a:hover {
+  color: #000;
+}
+footer a:first-child:hover {
+  color: #24AADF;
+}
+.blue-bb {
+  border-bottom: 1px solid #24AADF;
+}
 /*--------------------------------------------------------------
 3.0 - CONTENT
 -------------------------------------------------------------- */
@@ -119,6 +164,7 @@ footer > div {
   padding: 1rem 0 8rem 0;
 }
 .S2 {
+  margin-top: 5rem;
   padding-bottom: 6rem;
 }
 .S2 > div {
@@ -141,11 +187,11 @@ footer > div {
   padding-bottom: 10px;
 }
 .normandy > p, .lexisvon > p, .beautybar > p {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .angle-bg {
   margin-top: 200px;
-  background: #D8D8D8;
+  background: #F6F6F6;
   padding: 30px 60px 100px 60px;
   position: relative;
 }
@@ -154,7 +200,7 @@ footer > div {
   content: "";
   width: 100vw;
   height: 50vh;
-  background: #D8D8D8;
+  background: #F6F6F6;
   z-index: -1;
   transform: rotate(-10deg);
   left: 50%;
@@ -166,7 +212,7 @@ footer > div {
   content: "";
   width: 100vw;
   height: 50vh;
-  background: #D8D8D8;
+  background: #F6F6F6;
   z-index: -1;
   transform: rotate(10deg);
   right: 50%;
@@ -268,21 +314,35 @@ footer > div {
   height: 350px;
   margin: 0 auto;
   padding: 100px 0 50px 0;
+  color: #24AADF;
 }
 .profile-img {
-  background: url(http://via.placeholder.com/400x452) no-repeat;
+  background: url(img/lexis.jpg) no-repeat;
   height: 400px;
+  background-size: cover;
 }
 .normandy-img {
-  background: url(http://via.placeholder.com/400x452) no-repeat;
+  background: url(img/normandy-img.png) no-repeat;
   height: 400px; 
+  background-size: cover;
+}
+.lexisvon-img {
+  background: url(img/lexisvon.png) no-repeat;
+  height: 400px;
+  background-size: cover;
+  background-position: -15px;
+}
+.beautybar-img {
+  background: url(img/beauty-bar.png) no-repeat;
+  height: 400px; 
+  background-size: cover;
 }
 /*--------------------------------------------------------------
 5.0 - UTILITY
 -------------------------------------------------------------- */
 /*-- 5.1 - Background Colors --*/
 .bg-grey {
-  background-color: #D8D8D8;
+  background-color: #F6F6F6;
 }
 .bg-blue {
   background-color: #24AADF;
@@ -294,6 +354,9 @@ footer > div {
 }
 .justify-flex-end {
   justify-content: flex-end;
+}
+.justify-sb {
+  justify-content: space-between;
 }
 .align-self-fe {
   align-self: flex-end;
