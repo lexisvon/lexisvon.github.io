@@ -1,0 +1,199 @@
+html * {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:'Open Sans', Sans-Serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Typography
+  1.1 - Headings
+  1.2 - Body Copy
+  1.3 - Buttons
+  1.4 - Forms
+2.0 - Navigation Menus
+  2.1 - Main Menu
+  2.2 - Footer Menu
+3.0 - Content
+  3.1 - Site Structure
+  3.2 - Columns / Widths
+4.0 - Media
+5.0 - Utility
+  5.1 - Background Colors
+  5.2 - Alignments
+  5.3 - Breakpoints
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+1.0 - TYPOGRAPHY
+-------------------------------------------------------------- */
+.tr {
+  text-align: right;
+}
+.f14 {
+  font-size: 14px;
+}
+/*-- 1.1 - Headings --*/
+.border-bottom {
+  border-bottom: solid 1px grey;
+}
+.title {
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+.title h2 {
+  margin-top: 10px;
+  font-size: 25px;
+}
+.call-out {
+  font-weight: 600;
+  font-size: 24px;
+}
+/*-- 1.2 - Body Copy --*/
+ul {
+  list-style-type: none;
+}
+p {
+  padding-right: 30px;
+}
+.lh-copy {
+  line-height: 1.2rem;
+}
+/*-- 1.3 - Buttons --*/
+a {
+  text-decoration: none;
+}
+/*--------------------------------------------------------------
+2.0 - NAVIGATION MENUS
+-------------------------------------------------------------- */
+/*-- 2.1 - Main Menu --*/
+nav a {
+  text-transform: uppercase;
+  color: black;
+}
+nav ul li {
+  padding-right: 30px;
+}
+/*--------------------------------------------------------------
+3.0 - CONTENT
+-------------------------------------------------------------- */
+/*-- 3.1 - Site Structure --*/
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+/*-- 3.2 - Columns --*/
+.col-1-1 {
+  width: 100%;
+}
+.col-1-2 {
+  width: 50%;
+}
+.col-1-3 {
+  width: 33.33%;
+}
+.col-1-4 {
+  width: 25%;
+}
+.col-1-5 {
+  width: 20%;
+}
+.col-1-6 {
+  width: 16.66%;
+}
+.col-1-7 {
+  width: 14.2%;
+}
+.col-1-8 {
+  width: 12.5%
+}
+.col-1-9 {
+  width: 11.11%;
+}
+.col-1-10 {
+  width: 10%;
+}
+.col-1-11 {
+  width: 9.091%
+}
+.col-1-12 {
+  width: 8.33%;
+}
+.col-2-3 {
+  width: 66.66%
+}
+.col-3-4 {
+  width: 75%
+}
+.col-3-5 {
+  width: 60%
+}
+.col-2-5 {
+  width: 40%
+}
+.col-5-6 {
+  width: 83.33%;
+}
+.col-3-7 {
+  width: 43%;
+}
+.col-4-7 {
+  width: 57%;
+}
+.col-5-8 {
+  width: 62.5%;
+}
+.col-3-8 {
+  width: 37.5%;
+}
+.col-2-9 {
+  width: 22.2%;
+}
+.col-7-9 {
+  width: 77.8%;
+}
+.col-3-10 {
+  width: 30%;
+}
+.col-7-10 {
+  width: 70%;
+}
+.col-5-11 {
+  width: 45%;
+}
+.col-6-11 {
+  width: 55%;
+}
+.col-11-12 {
+  width: 91.67%;
+}
+/*--------------------------------------------------------------
+4.0 - MEDIA
+-------------------------------------------------------------- */
+/*--------------------------------------------------------------
+5.0 - UTILITY
+-------------------------------------------------------------- */
+/*-- 5.1 - Background Colors --*/
+.bg-grey {
+  background-color: grey;
+}
+.bg-blue {
+  background-color: #24AADF;
+}
+/*-- 5.2 - Alignments --*/
+.flex {
+  display: flex;
+}
+.justify-flex-end {
+  justify-content: flex-end;
+}
