@@ -12,6 +12,7 @@ html * {
 body {
   font-family:'Open Sans', Sans-Serif;
   font-size: 16px;
+  color: #424242;
   -webkit-font-smoothing: antialiased;
 }
 /*--------------------------------------------------------------
@@ -48,14 +49,11 @@ body {
 }
 /*-- 1.1 - Headings --*/
 .border-bottom {
-  border-bottom: solid 1px #24AADF;
+  border-bottom: solid 1px #424242;
 }
 .title {
   margin: 0 auto;
   padding: 5rem 0;
-}
-.title p {
-  color: #24AADF;
 }
 .title h2 {
   margin-top: 10px;
@@ -174,12 +172,12 @@ footer a:first-child:hover {
   overflow: hidden;
 }
 .normandy, .beautybar {
-  margin-right: -40px;
+  margin-right: 30px;
   margin-top: 300px;
   z-index: 1;
 }
 .lexisvon {
-  margin-left: -40px;
+  margin-left: 30px;
   margin-top: 300px;
   z-index: 1;
 }
@@ -330,7 +328,6 @@ footer a:first-child:hover {
   background: url(img/lexisvon.png) no-repeat;
   height: 400px;
   background-size: cover;
-  background-position: -15px;
 }
 .beautybar-img {
   background: url(img/beauty-bar.png) no-repeat;
