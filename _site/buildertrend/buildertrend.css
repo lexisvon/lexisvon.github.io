@@ -117,6 +117,9 @@ nav a {
   color: black;
   transition: .25s ease;
 }
+nav a:hover {
+  color: #24AADF;
+}
 nav ul {
   padding: 20px 20px;
 }
